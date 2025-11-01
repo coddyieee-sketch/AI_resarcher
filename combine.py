@@ -65,12 +65,10 @@ CORS(flask_app)
 perplexity_client = OpenAI(
     api_key=os.getenv('PERPLEXITY_API_KEY'),
     base_url="https://api.perplexity.ai",
-    timeout=httpx.Timeout(
-        connect=10.0,
-        read=120.0,
-        write=10.0,
-        pool=10.0
-    ),
+    perplexity_client = OpenAI(
+    api_key=st.secrets["PERPLEXITY_API_KEY"],
+    base_url="https://api.perplexity.ai",
+    timeout=httpx.Timeout(60.0),
     max_retries=2
 )
 
@@ -825,3 +823,4 @@ elif page == "💡 Research Insights":
                     st.error(f"❌ Error: {str(e)}")
         else:
             st.warning("Please search papers first and enter a valid problem statement.")
+
