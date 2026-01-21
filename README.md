@@ -69,23 +69,23 @@ python -m venv venv
 source venv/bin/activate   # Linux / macOS
 venv\Scripts\activate      # Windows
 ```
-3️⃣ Install Dependencies
+###3️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-4️⃣ Configure Environment Variables
+###4️⃣ Configure Environment Variables
 
 Create a .env file in the root directory:
 ```bash
 
 OPENAI_API_KEY=your_api_key_here
 ```
-▶️ Usage
+###▶️ Usage
 Start the Backend Server
 ```bash
 uvicorn main:app --reload
 ```
-Example Workflow
+###Example Workflow
 
 Enter a research problem in natural language
 
@@ -97,8 +97,8 @@ Structured summaries are generated
 
 Experiment design suggestions are provided.
 
-🏗️ Architecture Diagram
-
+###🏗️ Architecture Diagram
+```
 flowchart TD
     U[User / Researcher] -->|Research Query| UI[Web / API Interface]
 
@@ -121,29 +121,23 @@ flowchart TD
 
     OUT1 --> UI
     OUT2 --> UI
+```
 
-
-📈 Impact
+###📈 Impact
 
 ⚡ Accelerates AI research ideation and validation
-
 📚 Reduces manual literature review overhead
-
 🎯 Enables focused, data-driven experimentation
 
-🔮 Roadmap
+###🔮 Roadmap
 
 Multi-paper comparison and ranking
-
 PDF upload and annotation support
-
 Citation-aware summaries
-
 Team collaboration features
-
 Integration with notebooks and MLOps tools
 
-🤝 Contributing
+###🤝 Contributing
 
 Contributions are welcome!
 Feel free to open issues or submit pull requests to improve features, performance, or documentation.
