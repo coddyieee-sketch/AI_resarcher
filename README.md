@@ -1,6 +1,6 @@
-# 🚀 AI_resarcher
+# 🚀 Accelerating AI Research with Intelligent Automation
 
-**AI_resarcher** is an AI-powered research productivity platform designed to help AI researchers, data scientists, and machine learning engineers move faster from idea to experimentation. It automates literature discovery, research summarization, and experiment planning using large language models.
+**Accelerating AI Research with Intelligent Automation** is an AI-powered research productivity platform designed to help AI researchers, data scientists, and machine learning engineers move faster from idea to experimentation. It automates literature discovery, research summarization, and experiment planning using large language models.
 
 ---
 
