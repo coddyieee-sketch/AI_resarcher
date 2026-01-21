@@ -97,11 +97,18 @@ Structured summaries are generated
 
 Experiment design suggestions are provided.
 
-🏗️ Architecture Diagram
-```
-<img width="1465" height="668" alt="image" src="https://github.com/user-attachments/assets/bc66c842-4c50-423c-8044-4a1fa541fa62" />
+## 🏗️ Architecture Diagram
 
-```
+![AI_resarcher Architecture](architecture_diagram.png)
+
+### High-Level System Flow
+- User submits a research query
+- Web/API interface forwards the request to backend
+- Backend orchestrates LLM reasoning and academic search
+- NLP pipeline processes retrieved research papers
+- Paper summarizer generates structured summaries
+- Experiment planner suggests datasets, models, and metrics
+
 
 📈 Impact
 
