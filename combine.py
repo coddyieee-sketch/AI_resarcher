@@ -1,30 +1,3 @@
-"""
-Combined Streamlit + Flask app
-File: streamlit_flask_combined_app.py
-
-How it works:
-- This single Python file runs a Flask API in a background thread and a Streamlit UI in the main thread.
-- Streamlit talks to the local Flask API at http://localhost:5000/api
-- When launching locally use:
-      streamlit run streamlit_flask_combined_app.py
-
-Important notes before deploying:
-- Add a .env file or set environment variable PERPLEXITY_API_KEY with your Perplexity/OpenAI API key.
-- For cloud deployment (Deta Space / Streamlit Cloud): make sure environment variables are configured in the hosting platform.
-
-Requirements (add to requirements.txt in your repo):
-- streamlit
-- flask
-- flask-cors
-- python-dotenv
-- openai
-- httpx
-- arxiv
-- requests
-
-"""
-#------ BEGIN COMBINED CODE ------
-
 # Standard library
 import os
 import json
@@ -823,5 +796,6 @@ elif page == "💡 Research Insights":
                     st.error(f"❌ Error: {str(e)}")
         else:
             st.warning("Please search papers first and enter a valid problem statement.")
+
 
 
